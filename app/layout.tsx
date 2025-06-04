@@ -2,12 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Dancing_Script } from 'next/font/google';
-import { Cedarville_Cursive } from 'next/font/google'
 
-const cedarville = Cedarville_Cursive({
-  weight: '400',
-  subsets: ['latin'],
-})
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],

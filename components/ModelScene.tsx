@@ -2,19 +2,19 @@
 
 import React, { Suspense, useRef } from 'react';
 import * as THREE from 'three';
-import { Canvas, useFrame } from '@react-three/fiber';
+import { Canvas } from '@react-three/fiber';
 import { OrbitControls, useGLTF, Html } from '@react-three/drei';
 
 function Scene() {
   // Load all 3 models
-  const tableGltf = useGLTF('/models/Table.glb');
+//   const tableGltf = useGLTF('/models/Table.glb');
   const laptopGltf = useGLTF('/models/Desk.glb');
   const manGltf = useGLTF('/models/Man.glb');
 
   // Refs for models if you want to animate or adjust dynamically
   const manRef = useRef<THREE.Group>(null);
   const laptopRef = useRef<THREE.Group>(null);
-  const tableRef = useRef<THREE.Group>(null);
+//   const tableRef = useRef<THREE.Group>(null);
 
   // Optional: Animate man to look at laptop
   // This example just sets a fixed rotation

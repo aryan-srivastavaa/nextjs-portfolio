@@ -1,14 +1,14 @@
 import React from 'react'
 import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from 'react-icons/fa';
 import ModelViewer from './ModelViewer';
-import ModelScene from './ModelScene';
+// import ModelScene from './ModelScene' 
 
 function LandingPage() {
     return (
         <section className="bg-[#E8EBEE] flex flex-col md:flex-row items-center justify-center min-h-screen z-10  transition-all px-4 md:px-16 overflow-hidden">
             <div className="bg-[#F5F7FA] md:w-full  flex flex-row rounded-lg shadow-lg ">
                 <div className='w-3/5 flex flex-col items-start justify-center p-8 md:p-16 space-y-6'>
-                    <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-gray-800 ">Hi, I'm Aryan Srivastava</h1>
+                    <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-gray-800 ">Hi, I am Aryan Srivastava</h1>
                     <h2 className="text-2xl sm:text-3xl font-medium mb-6 text-gray-600 ">Full Stack Developer</h2>
 
 

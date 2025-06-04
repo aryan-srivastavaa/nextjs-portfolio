@@ -3,12 +3,12 @@
 import { motion } from 'framer-motion';
 import { FaGithub } from 'react-icons/fa';
 import Image from 'next/image';
-import { FaChevronLeft } from 'react-icons/fa';
-import Link from 'next/link';
+// import { FaChevronLeft } from 'react-icons/fa';
+// import Link from 'next/link';
 import {
     SiHtml5, SiCss3, SiThreedotjs, SiJavascript,
     SiNodedotjs, SiExpress, SiNextdotjs, SiReact,
-    SiTailwindcss, SiDjango, SiMongodb, SiPostgresql, SiC,
+    SiTailwindcss, SiMongodb, SiC,
 } from 'react-icons/si';
 
 const projects = [

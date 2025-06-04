@@ -1,14 +1,14 @@
 'use client';
-import { Canvas } from '@react-three/fiber';
-import { OrbitControls, useGLTF } from '@react-three/drei';
+// import { Canvas } from '@react-three/fiber';
+// import {  useGLTF } from '@react-three/drei';
 import { useState } from 'react';
 // import emailjs from 'emailjs-com'; 
 import { FaChevronLeft } from 'react-icons/fa';
 import Link from 'next/link';
-const ContactModel = () => {
-    const { scene } = useGLTF('/models/contact.glb');
-    return <primitive object={scene} scale={[1, 1, 1]} rotation={[0, -Math.PI / 2, 0]} position={[0, -3, 0]} />;
-};
+// const ContactModel = () => {
+//     const { scene } = useGLTF('/models/contact.glb');
+//     return <primitive object={scene} scale={[1, 1, 1]} rotation={[0, -Math.PI / 2, 0]} position={[0, -3, 0]} />;
+// };
 
 const Contact = () => {
     const [form, setForm] = useState({ name: '', email: '', message: '' });

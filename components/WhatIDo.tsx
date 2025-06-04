@@ -5,8 +5,8 @@ import {
 } from 'react-icons/si';
 import { useRef, Suspense } from 'react';
 import * as THREE from 'three';
-import { Canvas, useFrame } from '@react-three/fiber';
-import { OrbitControls, useGLTF, Html } from '@react-three/drei';
+import { Canvas } from '@react-three/fiber';
+import { OrbitControls, useGLTF } from '@react-three/drei';
 const techStack = [
     { icon: SiHtml5, label: 'HTML', color: 'text-orange-600' },
     { icon: SiCss3, label: 'CSS', color: 'text-blue-600' },
@@ -53,7 +53,7 @@ export default function WhatIDo() {
                 {/* Right: Content */}
                 <div className="w-full md:w-1/2 text-gray-700 text-lg space-y-6 ">
                     <p>
-                        I'm Aryan Srivastava, a passionate full-stack developer who thrives at the intersection of design and technology.
+                        I am Aryan Srivastava, a passionate full-stack developer who thrives at the intersection of design and technology.
                         I specialize in building efficient, scalable, and beautiful web applications using the latest modern frameworks.
                         I enjoy turning complex problems into clean, user-friendly solutions and continuously learning new tools to stay ahead in the tech space.
                     </p>

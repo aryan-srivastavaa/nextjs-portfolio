@@ -2,8 +2,8 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { FaChevronLeft } from 'react-icons/fa';
-import Link from 'next/link';
+// import { FaChevronLeft } from 'react-icons/fa';
+// import Link from 'next/link';
 const experiences = [
   {
     company: 'CYRAN AI Solutions',
