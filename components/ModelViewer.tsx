@@ -7,7 +7,7 @@ import { OrbitControls, useGLTF, Html } from '@react-three/drei';
 
 function AnimatedModel() {
     const group = useRef<THREE.Group>(null);
-    const { scene, animations } = useGLTF('/models/man.glb');
+    const { scene, animations } = useGLTF('/models/Man.glb');
 
     // Setup animation mixer
     const mixer = React.useMemo(() => new THREE.AnimationMixer(scene), [scene]);

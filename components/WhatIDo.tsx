@@ -24,7 +24,7 @@ const techStack = [
 ];
 function DeskModel() {
     const group = useRef<THREE.Group>(null);
-    const { scene } = useGLTF('/models/desk.glb');
+    const { scene } = useGLTF('/models/Desk.glb');
 
     return <primitive ref={group}
         object={scene}
