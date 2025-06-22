@@ -11,8 +11,8 @@ const experiences = [
     duration: 'Sep 2023 – Present',
     role: 'Software Engineer',
     description: [
-      'Designed and developed multiple websites from scratch using React, Next, Tailwind, TypeScript, Django and PostgreSQL, adhering to client specifications.',
-      'Utilized a comprehensive tech stack including HTML, CSS, JavaScript, React, Redux, Django, WebSockets and REST APIs to deliver responsive and scalable web applications, enhancing performance by 25%.',
+      'Designed and developed multiple websites from scratch using React, Next, Tailwind, TypeScript, Django and PostgreSQL adhering to client specifications.',
+      'Utilized a comprehensive tech stack including HTML, CSS, JavaScript, React, Redux, Django, WebSockets, REST APIs and Docker to deliver responsive and scalable web applications, enhancing performance by 25%.',
     ],
   },
   {

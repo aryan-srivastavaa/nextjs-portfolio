@@ -25,7 +25,7 @@ const Contact = () => {
 
                 <>
                     <Link href="/" passHref>
-                        <div className="fixed top-5 left-5 z-50 inline-flex items-center gap-2 cursor-pointer group hover:bg-gray-200 p-2 px-3 rounded-full transition">
+                        <div className="fixed top-5 left-5 z-50 inline-flex items-center gap-2 cursor-pointer group dark:text-gray-600 hover:bg-gray-200 p-2 px-3 rounded-full transition">
                             <FaChevronLeft size={20} />
                             <span
                                 className="ml-1 whitespace-nowrap overflow-hidden max-w-0 group-hover:max-w-[80px] group-hover:ml-2 transition-all duration-300 ease-in-out"
@@ -66,7 +66,7 @@ const Contact = () => {
                                 <input
                                     type="text"
                                     placeholder="Your Name"
-                                    className="w-full p-3 border border-gray-300 rounded-lg"
+                                    className="w-full p-3 border border-gray-300 rounded-lg dark:placeholder:text-gray-400"
                                     value={form.name}
                                     onChange={(e) => setForm({ ...form, name: e.target.value })}
                                     required
@@ -75,7 +75,7 @@ const Contact = () => {
                                 <input
                                     type="email"
                                     placeholder="Your Email"
-                                    className="w-full p-3 border border-gray-300 rounded-lg"
+                                    className="w-full p-3 border border-gray-300 rounded-lg dark:placeholder:text-gray-400"
                                     value={form.email}
                                     onChange={(e) => setForm({ ...form, email: e.target.value })}
                                     required
@@ -84,7 +84,7 @@ const Contact = () => {
                                 <textarea
                                     rows={4}
                                     placeholder="Your Message"
-                                    className="w-full p-3 border border-gray-300 rounded-lg"
+                                    className="w-full p-3 border border-gray-300 rounded-lg dark:placeholder:text-gray-400"
                                     value={form.message}
                                     onChange={(e) => setForm({ ...form, message: e.target.value })}
                                     required

@@ -16,7 +16,7 @@ function LandingPage() {
                         <a
                             href="https://github.com/aryan-srivastavaa"
                             target="_blank"
-                            className="text-gray-600 hover:text-black dark:text-gray-300 dark:hover:text-white transition"
+                            className="text-gray-600 hover:text-black dark:text-gray-300 dark:hover:text-black transition"
                             aria-label="GitHub"
                         >
                             <FaGithub />
@@ -54,7 +54,7 @@ function LandingPage() {
                             Contact Me
                         </a>
                         <a
-                            href="https://drive.google.com/file/d/1j8BbZ1SuXCD85kfkteCZVaZdnM7UqkOP/view"
+                            href="https://drive.google.com/file/d/18n7OKhfnXG44233KoFtT2aHX4RUL7zLu/view?usp=sharing"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="relative inline-block px-6 py-2 font-semibold text-blue-600 border-2 border-blue-500 rounded-md bg-white shadow-md transition transform hover:bg-gradient-to-r hover:from-blue-500 hover:to-cyan-500 hover:text-white hover:scale-105 hover:shadow-xl"

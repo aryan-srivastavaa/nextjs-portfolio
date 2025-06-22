@@ -34,7 +34,7 @@ export default function Navbar() {
                     <div className="md:hidden">
                         <button
                             onClick={() => setIsOpen(!isOpen)}
-                            className="text-gray-800 dark:text-white focus:outline-none"
+                            className="text-gray-800 dark:text-white focus:outline-none cursor-pointer"
                         >
                             {isOpen ? <X size={28} /> : <Menu size={28} />}
                         </button>
@@ -53,7 +53,7 @@ export default function Navbar() {
             <aside
                 className={`fixed top-0 left-0 h-full w-64 bg-gradient-to-r from-[#003366] to-[#1A4D80]  shadow-md z-50 transform transition-transform duration-300 ease-in-out md:hidden ${isOpen ? 'translate-x-0' : '-translate-x-full'
                     }`}
-            >
+            >   
                 <div className="p-6 flex flex-col space-y-4">
                     <Link href="/" onClick={() => setIsOpen(false)} className="text-white dark:text-white">Home</Link>
                     <Link href="#about" onClick={() => setIsOpen(false)} className="text-white dark:text-white">About</Link>
