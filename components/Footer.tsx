@@ -3,7 +3,7 @@
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-r from-[#003366] to-[#1A4D80] text-white py-6 px-6 md:px-16 mt-12">
+    <footer className="bg-[#000] border-t-1 border-[#d6d5d5] text-white py-6 px-6 md:px-16 mt-12">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
         <p className="text-sm">&copy; {new Date().getFullYear()} Aryan Srivastava. All rights reserved.</p>
         <div className="flex space-x-6 text-sm">

@@ -9,7 +9,7 @@ import WorkExperience from "@/components/WorkExperience";
 
 export default function Home() {
   return (
-    <div className="bg-[#E8EBEE] z-10">
+    <div className="bg-[#000] z-10">
       <Navbar/>
     <LandingPage/>
     <WhatIDo/>

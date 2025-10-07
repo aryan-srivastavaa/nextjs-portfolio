@@ -8,10 +8,21 @@ import Image from 'next/image';
 import {
     SiHtml5, SiCss3, SiThreedotjs, SiJavascript,
     SiNodedotjs, SiExpress, SiNextdotjs, SiReact,
-    SiTailwindcss, SiMongodb, SiC,
+    SiTailwindcss, SiMongodb, SiC, SiReactbootstrap
 } from 'react-icons/si';
 
 const projects = [
+    {
+        title: 'quick Flow',
+        image: '/projects/quickFlow.png',
+        description: "QuickFlow is a visual workflow builder that allows user to create, connect, and manage nodes. It’s built to help developer design and visualize complex processes effortlessly, all within an interactive canvas.",
+        github: 'https://github.com/aryan-srivastavaa/quickFlow/',
+        tech: [
+            { icon: SiReact, color: 'text-blue-500' },
+            { icon: SiJavascript, color: 'text-yellow-500' },
+            { icon: SiReactbootstrap, color: 'text-blue-400' }
+        ],
+    },
     {
         title: 'Web Chat Application',
         image: '/projects/web-chat-app.png',
@@ -71,48 +82,48 @@ const projects = [
 
 const MyProjects = () => {
     return (
-        
-            
-            <section id="projects" className="py-16 px-6 mb-14 md:px-16 bg-[#E8EBEE]">
 
-                <h2 className="text-4xl font-bold text-center text-[#003366] mb-12">My Projects</h2>
 
-                <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-2">
-                    {projects.map((project, index) => (
-                        <motion.div
-                            key={index}
-                            initial={{ opacity: 0, y: 30 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.6, ease: 'easeOut' }}
-                            viewport={{ once: true }}
-                            className="bg-white rounded-2xl cursor-pointer shadow-lg hover:shadow-2xl transition-shadow duration-300 overflow-hidden"
-                        >
-                            <Image
-                                src={project.image}
-                                alt={project.title}
-                                width={800}
-                                height={400}
-                                className="w-full h-56 object-cover"
-                            />
-                            <div className="p-6 space-y-3">
-                                <div className="flex justify-between items-center">
-                                    <h3 className="text-xl font-bold text-gray-800">{project.title}</h3>
-                                    <a href={project.github} target="_blank" rel="noopener noreferrer">
-                                        <FaGithub className="text-2xl text-gray-700 hover:text-black" />
-                                    </a>
-                                </div>
-                                <p className="text-gray-600 text-sm">{project.description}</p>
-                                <div className="flex flex-wrap gap-2 pt-2">
-                                    {project.tech.map(({ icon: Icon, color }, idx) => (
-                                        <Icon key={idx} className={`text-xl ${color}`} />
-                                    ))}
-                                </div>
+        <section id="projects" className="py-16 px-6 mb-14 md:px-16">
+
+            <h2 className="text-4xl font-bold text-center text-[#d6d5d5] mb-12">My Projects</h2>
+
+            <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-2">
+                {projects.map((project, index) => (
+                    <motion.div
+                        key={index}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6, ease: 'easeOut' }}
+                        viewport={{ once: true }}
+                        className="bg-[#d6d5d5] rounded-2xl cursor-pointer shadow-lg hover:shadow-2xl transition-shadow duration-300 overflow-hidden"
+                    >
+                        <Image
+                            src={project.image}
+                            alt={project.title}
+                            width={800}
+                            height={400}
+                            className="w-full h-56 object-cover"
+                        />
+                        <div className="p-6 space-y-3">
+                            <div className="flex justify-between items-center">
+                                <h3 className="text-xl font-bold text-gray-800">{project.title}</h3>
+                                <a href={project.github} target="_blank" rel="noopener noreferrer">
+                                    <FaGithub className="text-2xl text-gray-700 hover:text-black" />
+                                </a>
                             </div>
-                        </motion.div>
-                    ))}
-                </div>
-            </section>
-        
+                            <p className="text-gray-600 text-sm">{project.description}</p>
+                            <div className="flex flex-wrap gap-2 pt-2">
+                                {project.tech.map(({ icon: Icon, color }, idx) => (
+                                    <Icon key={idx} className={`text-xl ${color}`} />
+                                ))}
+                            </div>
+                        </div>
+                    </motion.div>
+                ))}
+            </div>
+        </section>
+
     );
 };
 

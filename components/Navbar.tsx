@@ -5,20 +5,20 @@ import { Menu, X } from 'lucide-react';
 import { Cedarville_Cursive } from 'next/font/google'
 
 const cedarville = Cedarville_Cursive({
-  weight: '400',
-  subsets: ['latin'],
+    weight: '400',
+    subsets: ['latin'],
 })
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
-    
+
     return (
-        <header className="bg-gradient-to-r from-[#003366] to-[#1A4D80] text-white   top-0 left-0 w-full shadow-md z-999">
+        <header className="bg-[#000] text-white top-0 left-0 w-full shadow-md z-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between h-16 items-center">
-                    <div className= {`flex-shrink-0 text-xl font-bold dark:text-white `}>
-                        <Link href="/" className={`${ cedarville.className} hover:font-bold transition duration-200`}>Aryan Srivastava</Link>
-                        </div>
+                    <div className={`flex-shrink-0 text-xl font-bold dark:text-white `}>
+                        <Link href="/" className={`${cedarville.className} hover:font-bold transition duration-200`}>Aryan Srivastava</Link>
+                    </div>
 
                     {/* Desktop Menu */}
                     <div className="hidden md:flex space-x-6">
@@ -51,9 +51,9 @@ export default function Navbar() {
 
             {/* Mobile Sidebar */}
             <aside
-                className={`fixed top-0 left-0 h-full w-64 bg-gradient-to-r from-[#003366] to-[#1A4D80]  shadow-md z-50 transform transition-transform duration-300 ease-in-out md:hidden ${isOpen ? 'translate-x-0' : '-translate-x-full'
+                className={`fixed top-0 left-0 h-full w-64 bg-[#000]  shadow-md z-50 transform transition-transform duration-300 ease-in-out md:hidden ${isOpen ? 'translate-x-0' : '-translate-x-full'
                     }`}
-            >   
+            >
                 <div className="p-6 flex flex-col space-y-4">
                     <Link href="/" onClick={() => setIsOpen(false)} className="text-white dark:text-white">Home</Link>
                     <Link href="#about" onClick={() => setIsOpen(false)} className="text-white dark:text-white">About</Link>

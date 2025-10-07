@@ -5,8 +5,8 @@ import ModelViewer from './ModelViewer';
 
 function LandingPage() {
     return (
-        <section className="bg-[#E8EBEE] flex flex-col md:flex-row items-center justify-center min-h-screen z-10  transition-all px-4 md:px-16 overflow-hidden">
-            <div className="bg-[#F5F7FA] md:w-full  flex flex-row rounded-lg shadow-lg ">
+        <section className="flex flex-col md:flex-row items-center justify-center min-h-screen z-10  transition-all px-4 md:px-16 overflow-hidden">
+            <div className="bg-[#d6d5d5]  flex flex-row rounded-lg shadow-lg pb-10 pt-20 w-full ">
                 <div className='w-3/5 flex flex-col items-start justify-center p-8 md:p-16 space-y-6'>
                     <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-gray-800 ">Hi, I am Aryan Srivastava</h1>
                     <h2 className="text-2xl sm:text-3xl font-medium mb-6 text-gray-600 ">Full Stack Developer</h2>
@@ -16,13 +16,13 @@ function LandingPage() {
                         <a
                             href="https://github.com/aryan-srivastavaa"
                             target="_blank"
-                            className="text-gray-600 hover:text-black dark:text-gray-300 dark:hover:text-black transition"
+                            className="text-gray-700 hover:text-black transition"
                             aria-label="GitHub"
                         >
                             <FaGithub />
                         </a>
                         <a
-                            href="https://www.linkedin.com/in/aryan-srivastava-5bb7931a5/"
+                            href="https://www.linkedin.com/in/aryan-srivastavaa/"
                             target="_blank"
                             className="text-blue-600 hover:text-blue-800 transition"
                             aria-label="LinkedIn"

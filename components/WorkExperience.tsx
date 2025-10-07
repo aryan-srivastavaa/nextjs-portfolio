@@ -33,9 +33,9 @@ export default function WorkExperience() {
   return (
     
       
-      <section id='experience' className="bg-[#E8EBEE] py-10 px-4">
+      <section id='experience' className="py-10 px-4">
 
-        <h2 className="text-4xl font-bold text-center mb-12 text-[#003366]">Work Experience</h2>
+        <h2 className="text-4xl font-bold text-center mb-12 text-[#d6d5d5]">Work Experience</h2>
 
         <div className="space-y-10 max-w-4xl mx-auto ">
           {experiences.map((exp, idx) => (
@@ -45,7 +45,7 @@ export default function WorkExperience() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, ease: 'easeOut' }}
               viewport={{ once: true }}
-              className="flex flex-col md:flex-row items-start gap-6 bg-white rounded-2xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300 cursor-pointer"
+              className="flex flex-col md:flex-row items-start gap-6 bg-[#d6d5d5] rounded-2xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300 cursor-pointer"
             >
               <Image
                 src={exp.logo}
