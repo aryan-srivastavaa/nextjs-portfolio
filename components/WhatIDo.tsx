@@ -38,7 +38,7 @@ export default function WhatIDo() {
         <section id="about" className="min-h-screen pt-4 pb-0 px-4 md:px-16" >
             <h2 className="text-4xl font-bold text-center mb-6 text-[#d6d5d5]">About Me</h2>
 
-            <div className="flex flex-col md:flex-row items-center mx-auto gap-10 bg-[#d6d5d5] p-6 pb-30 rounded-lg shadow-lg">
+            <div className="flex flex-col md:flex-row items-center mx-auto gap-10 pt-20 bg-[#d6d5d5] p-6 pb-30 rounded-lg shadow-lg">
                 <div className="w-full md:w-1/2 h-96">
                     <Canvas camera={{ position: [0, 1.5, 3], fov: 50 }}>
                         <ambientLight intensity={0.6} />

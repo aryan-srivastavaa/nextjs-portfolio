@@ -13,13 +13,16 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 const dancing = Dancing_Script({
-        subsets: ['latin'],
-        weight: ['400', '700'],
-        variable: '--font-dancing',
-    });
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  variable: '--font-dancing',
+});
 export const metadata: Metadata = {
   title: "Aryan Srivastava",
   description: "Portfolio of Aryan Srivastava",
+  icons: {
+    icon: '/favicon.ico',
+  },
 };
 
 export default function RootLayout({
@@ -32,7 +35,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${dancing.variable} antialiased `}
       >
-        
+
         {children}
       </body>
     </html>
