@@ -49,7 +49,7 @@ function LandingPage() {
                     <div className="flex space-x-4 mt-6 flex-wrap gap-1">
                         <a
                             href="/contact"
-                            className="relative inline-block px-6 py-2 text-white font-semibold rounded-md bg-gradient-to-r from-blue-500 to-cyan-500 shadow-md transform transition hover:scale-105 hover:shadow-xl"
+                            className="relative inline-block px-6 py-2 text-white font-semibold rounded-md bg-gradient-to-r from-blue-500 to-cyan-500 dark:bg-gradient-to-r from-blue-500 to-cyan-500 shadow-md transform transition hover:scale-105 hover:shadow-xl"
                         >
                             Contact Me
                         </a>
@@ -57,7 +57,7 @@ function LandingPage() {
                             href="https://drive.google.com/file/d/1-bIY_rGsavWgy2tSPW3egxQs7n_e4ms5/view?usp=sharing"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="relative inline-block px-6 py-2 font-semibold text-blue-600 border-2 border-blue-500 rounded-md bg-white shadow-md transition transform hover:bg-gradient-to-r hover:from-blue-500 hover:to-cyan-500 hover:text-white hover:scale-105 hover:shadow-xl"
+                            className="relative inline-block px-6 py-2 font-semibold text-blue-600 border-2 border-blue-500 rounded-md bg-white shadow-md transition transform hover:bg-gradient-to-r hover:from-blue-500 hover:to-cyan-500 dark: hover:bg-gradient-to-r hover:from-blue-500 hover:to-cyan-500 hover:text-white hover:scale-105 hover:shadow-xl"
                         >
                             View Resume
                         </a>
